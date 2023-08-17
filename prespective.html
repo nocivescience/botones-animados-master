@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mother1{
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        overflow: hidden;
+        perspective: 100px;
+        transform-style: preserve-3d;
+    }
+    .mother1 .son1{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        background-color: rgb(0, 166, 255);
+        /* perspective: 100px; */
+        transform: rotateX(45deg) translateX(100px);
+    }
+</style>
+<body>
+    <div class="mother1">
+        <div class="son1"></div>
+    </div>
+</body>
+</html>
